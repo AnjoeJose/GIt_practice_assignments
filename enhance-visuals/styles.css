@@ -46,3 +46,16 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+/* Add background images */
+.background-image {
+    background-image: url('../images/Wander.jpg');
+}
+
+.icon {
+    background-image: url('../images/colours.jpg');
+}
+
+.banner {
+    background-image: url('../images/creative.jpg');
+}
