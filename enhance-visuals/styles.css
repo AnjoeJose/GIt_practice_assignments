@@ -1,61 +1,59 @@
-/* styles.css */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 0;
+/* Animation styles */
+.animated-section {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    opacity: 0; /* Initially hidden */
 }
 
-header {
-    background-color: #007bffe;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+/* Animation keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-main {
-    padding: 20px;
+/* Apply animation to sections */
+#introduction {
+    animation-name: fadeIn;
+    animation-delay: 0s;
 }
 
+#inspiration {
+    animation-name: fadeIn;
+    animation-delay: 0.5s; /* Delayed animation */
+}
+
+#creativity {
+    animation-name: fadeIn;
+    animation-delay: 1s; /* Delayed animation */
+}
+
+/* Background images */
+#introduction {
+    background-image: url('../images/introduction_bg.jpg');
+    background-size: cover; /* Make sure the background image covers the entire area */
+    /* Additional background styles */
+}
+
+#inspiration {
+    background-image: url('../images/inspiration_bg.jpg');
+    background-size: cover; /* Make sure the background image covers the entire area */
+    /* Additional background styles */
+}
+
+#creativity {
+    background-image: url('../images/creativity_bg.jpg');
+    background-size: cover; /* Make sure the background image covers the entire area */
+    /* Additional background styles */
+}
+
+/* Additional styling for sections */
 section {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
-    color: #007bffe;
-}
-
-p {
-    line-height: 1.6;
+    padding: 50px;
+    color: white; /* Text color on top of background images */
+    text-align: center;
 }
 
 .highlight {
     font-size: 24px;
     color: #ff6600;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Add background images */
-.background-image {
-    background-image: url('../images/Wander.jpg');
-}
-
-.icon {
-    background-image: url('../images/colours.jpg');
-}
-
-.banner {
-    background-image: url('../images/creative.jpg');
 }
